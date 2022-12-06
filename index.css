@@ -71,7 +71,11 @@ body {
 .card__panel--inside-right {
   border-left: none;
   color: rgb(28 22 22);
+<<<<<<< HEAD
   font-size: 16px;
+=======
+  font-size: 1.2rem;
+>>>>>>> 910745cce1163dd803ab09cd143c61cfb64c72c4
   background-image: linear-gradient(to right, #e00000,#e3d9ec);
   z-index: -1;
 }
