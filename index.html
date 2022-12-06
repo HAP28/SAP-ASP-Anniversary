@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+	<body>
+		<p id="blink">Click card to open</p>
+
+		<div class="card__container js-card-opener">
+			<div class="card">
+				<div class="card__panel card__panel--front">
+					Happy Anniversary Pappa & Mummy &#128147;
+				</div>
+				<div class="card__panel card__panel--inside-left"></div>
+				<div class="card__panel card__panel--inside-right">
+					<img
+						src="./images/img1.jpeg"
+						width="200px"
+						height="120px"
+					/>
+					<img
+						src="./images/img2.jpeg"
+						width="200px"
+						height="120px"
+					/>
+					<b
+						>Happy 28th Anniversary to the parents that inspire me every
+						day. Best wishes to you two for all the years to
+						come.</b
+					>
+					<img
+						src="./images/img3.jpeg"
+						width="200px"
+						height="120px"
+					/>
+					<img
+						src="./images/img1.jpeg"
+						width="200px"
+						height="120px"
+					/>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			const openBtn = document.querySelector(".js-card-opener");
+
+			openBtn.onclick = function () {
+				document.body.classList.toggle("open");
+			};
+			var blink = document.getElementById("blink");
+			setInterval(function () {
+				blink.style.opacity = blink.style.opacity == 0 ? 1 : 0;
+			}, 500);
+		</script>
+	</body>
+</html>
