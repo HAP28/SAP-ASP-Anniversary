@@ -1,13 +1,15 @@
 body {
   text-align: center;
-  background: rgb(224, 214, 214);
+  /* background: rgb(224, 214, 214); */
+  /* background-image: linear-gradient(red, yellow, green); */
+  background-image: linear-gradient(to right, #e3d9ec, #e00000);
 }
 #blink {
-                font-size: 20px;
-                font-weight: bold;
-                color: #2d38be;
-                transition: 0.5s;
-            }
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d38be;
+    transition: 0.5s;
+}
 .card__container {
   cursor: pointer;
   position: absolute;
@@ -35,7 +37,7 @@ body {
   transform: rotateX(0deg);
 }
 .card__panel {
-  border: 1px solid rgb(243, 19, 19);
+  border: 1px solid rgb(255, 0, 0);
   position: absolute;
   top: 0;
   left: 0;
@@ -51,11 +53,10 @@ body {
 }
 .card__panel--front {
   backface-visibility: hidden;
-  background: #bd5f21;
-  /* background-image: linear-gradient(toright, #8e2de2, #4a00e0); */
+  background-image: linear-gradient(to right, #e00000,#e3d9ec);
   z-index: 1;
-  color: #fff;
-  font-size: 2.5rem;
+  color: rgb(28 22 22);
+  font-size: 2.1rem;
 }
 .open .card__panel--front {
   transform: rotate3d(0, 1, 0, -170deg);
@@ -69,6 +70,8 @@ body {
 }
 .card__panel--inside-right {
   border-left: none;
-  background: #fff;
+  color: rgb(28 22 22);
+  font-size: 1.2rem;
+  background-image: linear-gradient(to right, #e00000,#e3d9ec);
   z-index: -1;
 }
